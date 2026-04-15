@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Signup Form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS Integration -->
-    <link rel="stylesheet" href="form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Signup</h1>
+<main class="container">
+  <h1>Create Account</h1>
 
-        <form>
+  <form>
 
-            <div class="input-group">
-                <input type="text" required>
-                <label>Full Name</label>
-            </div>
-
-            <div class="input-group">
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-
-            <div class="input-group">
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-
-            <div class="input-group">
-                <input type="password" required>
-                <label>Confirm Password</label>
-            </div>
-
-            <div class="input-group">
-                <input type="date" required>
-            </div>
-
-            <div class="radio-group">
-                <label><input type="radio" name="role"> Student</label>
-                <label><input type="radio" name="role"> Employee</label>
-            </div>
-
-            <div class="checkbox-group">
-                <label>
-                    <input type="checkbox" required>
-                    I agree to all the Terms and Conditions
-                </label>
-            </div>
-
-            <button type="submit">Signup</button>
-
-        </form>
+    <div class="input-group">
+      <input type="email" required placeholder=" ">
+      <label>Email</label>
     </div>
+
+    <div class="input-group">
+      <input type="password" required pattern=".{9,}" placeholder=" ">
+      <label>Password (min 9 chars)</label>
+    </div>
+
+    <div class="input-group">
+      <input type="password" required placeholder=" ">
+      <label>Confirm Password</label>
+    </div>
+
+    <div class="input-group">
+      <input type="date" required>
+    </div>
+
+    <div class="radio-group">
+      <p>Gender</p>
+      <label><input type="radio" name="gender" required> Male</label>
+      <label><input type="radio" name="gender"> Female</label>
+    </div>
+
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" required> I agree to Terms & Conditions
+      </label>
+    </div>
+
+    <button type="submit">Sign Up</button>
+
+  </form>
+</main>
 
 </body>
 </html>
